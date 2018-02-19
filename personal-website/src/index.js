@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import CommentsList from './containers/CommentsListContainer';
+import AddComment from './containers/AddCommentContainer'
 import registerServiceWorker from './registerServiceWorker';
 
 import { createStore } from 'redux'
@@ -17,6 +18,7 @@ ReactDOM.render(
       <div className="header">
         <h2>Welcome to React</h2>
       </div>
+      <AddComment />
       <CommentsList />
     </div>
   </Provider>

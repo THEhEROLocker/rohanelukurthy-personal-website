@@ -5,8 +5,8 @@ class CommentsList extends Component{
     render(){
         return (
             <div>
-                { this.props.CommentsListReducer.map(obj => {
-                    return <Comment author={obj.author} commentData={obj.commentData} />
+                { this.props.CommentsListReducer.map((obj,index) => {
+                    return <Comment key={index} author={obj.author} commentData={obj.commentData} />
                 }) }
             </div>
         )

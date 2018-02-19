@@ -11,5 +11,10 @@ export default function CommentsList(
     ],
     action
 ){
-    return state
+    if(action.type === "COMMENT_SUBMITTED"){
+        return [{author: action.event[0], commentData: action.event[1]}, ...state]
+    }
+    else{
+        return state
+    }
 }
