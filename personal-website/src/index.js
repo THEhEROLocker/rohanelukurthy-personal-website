@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
+import CommentsList from './containers/CommentsListContainer';
 import registerServiceWorker from './registerServiceWorker';
 
 import { createStore } from 'redux'
@@ -17,7 +17,7 @@ ReactDOM.render(
       <div className="header">
         <h2>Welcome to React</h2>
       </div>
-      <App />
+      <CommentsList />
     </div>
   </Provider>
 
